@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.AssemblyInfo.cs
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.AI.deps.json
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.AI.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.AI.pdb
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.Core.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.Core.pdb
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGam.420959BC.Up2Date
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\refint\ChessGame.AI.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.pdb
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ref\ChessGame.AI.dll

@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="ChessGame.WPF.Views.MenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200">
+
+    <Grid Background="{DynamicResource MaterialDesignPaper}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- 타이틀 -->
+            <TextBlock Text="Chess Game" 
+                       Style="{StaticResource TitleTextStyle}"
+                       Foreground="{DynamicResource PrimaryHueDarkBrush}"/>
+
+            <!-- 게임 모드 선택 -->
+            <GroupBox Header="게임 모드" Margin="0,20,0,10"
+                      materialDesign:ColorZoneAssist.Mode="PrimaryMid">
+                <StackPanel Margin="10">
+                    <RadioButton x:Name="StandardModeRadio" 
+                                 Content="표준 체스" 
+                                 IsChecked="True"
+                                 Margin="5"/>
+                    <RadioButton x:Name="CustomModeRadio" 
+                                 Content="커스텀 모드" 
+                                 IsEnabled="False"
+                                 Margin="5"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- 플레이 모드 선택 -->
+            <GroupBox Header="플레이 모드" Margin="0,10,0,10"
+                      materialDesign:ColorZoneAssist.Mode="PrimaryMid">
+                <StackPanel Margin="10">
+                    <RadioButton x:Name="SinglePlayerRadio" 
+                                 Content="싱글 플레이어 (vs AI)" 
+                                 IsChecked="True"
+                                 Margin="5"/>
+                    <RadioButton x:Name="MultiPlayerRadio" 
+                                 Content="멀티 플레이어" 
+                                 IsEnabled="False"
+                                 Margin="5"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- AI 난이도 선택 -->
+            <GroupBox x:Name="AiDifficultyGroup" 
+                      Header="AI 난이도" 
+                      Margin="0,10,0,20"
+                      materialDesign:ColorZoneAssist.Mode="PrimaryMid">
+                <StackPanel Margin="10">
+                    <RadioButton x:Name="EasyRadio" Content="쉬움" Margin="5"/>
+                    <RadioButton x:Name="MediumRadio" Content="보통" IsChecked="True" Margin="5"/>
+                    <RadioButton x:Name="HardRadio" Content="어려움" Margin="5"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- 시작 버튼 -->
+            <Button x:Name="StartGameButton"
+                    Content="게임 시작"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Click="StartGameButton_Click"/>
+
+            <!-- 종료 버튼 -->
+            <Button x:Name="ExitButton"
+                    Content="종료"
+                    Style="{StaticResource MenuButtonStyle}"
+                    materialDesign:ButtonAssist.CornerRadius="5"
+                    Background="{DynamicResource SecondaryHueMidBrush}"
+                    Click="ExitButton_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="ChessGame.WPF.Controls.ChessBoardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="CheckWarningAnimation">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.5"
+                           AutoReverse="True" RepeatBehavior="3x"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Border BorderBrush="#2c3e50" BorderThickness="4" 
+            Background="White" CornerRadius="8">
+        <Border.Effect>
+            <DropShadowEffect Color="Black" BlurRadius="15" 
+                            ShadowDepth="5" Opacity="0.3"/>
+        </Border.Effect>
+
+        <Grid>
+            <!-- 좌표 표시 -->
+            <Canvas x:Name="CoordinatesCanvas" IsHitTestVisible="False"/>
+
+            <!-- 체스판 -->
+            <Grid x:Name="BoardGrid" 
+                  Width="600" Height="600"
+                  MouseLeftButtonDown="BoardGrid_MouseLeftButtonDown"
+                  MouseMove="BoardGrid_MouseMove"
+                  MouseLeave="BoardGrid_MouseLeave">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <!-- 이동 애니메이션 레이어 -->
+            <Canvas x:Name="AnimationCanvas" IsHitTestVisible="False"/>
+
+            <!-- 효과 레이어 -->
+            <Canvas x:Name="EffectsCanvas" IsHitTestVisible="False"/>
+        </Grid>
+    </Border>
+</UserControl>

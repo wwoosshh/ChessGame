@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\bin\Debug\net8.0\ChessGame.Core.deps.json
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\bin\Debug\net8.0\ChessGame.Core.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\bin\Debug\net8.0\ChessGame.Core.pdb
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.AssemblyInfo.cs
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\refint\ChessGame.Core.dll
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ChessGame.Core.pdb
+C:\Users\user\source\repos\ChessGame\ChessGame.Core\obj\Debug\net8.0\ref\ChessGame.Core.dll
