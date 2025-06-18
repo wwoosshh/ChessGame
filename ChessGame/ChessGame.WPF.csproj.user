@@ -11,6 +11,9 @@
     <Compile Update="Controls\MoveEvaluationControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\CustomBoardSetupView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GameView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -29,8 +29,7 @@
                                  IsChecked="True"
                                  Margin="5"/>
                     <RadioButton x:Name="CustomModeRadio" 
-                                 Content="커스텀 모드" 
-                                 IsEnabled="False"
+                                 Content="커스텀 모드 (페어리 체스)" 
                                  Margin="5"/>
                 </StackPanel>
             </GroupBox>
@@ -62,19 +61,57 @@
                 </StackPanel>
             </GroupBox>
 
-            <!-- 시작 버튼 -->
-            <Button x:Name="StartGameButton"
-                    Content="게임 시작"
-                    Style="{StaticResource MenuButtonStyle}"
-                    Click="StartGameButton_Click"/>
+            <!-- 시작 버튼들 -->
+            <StackPanel>
+                <!-- 표준 게임 시작 버튼 -->
+                <Button x:Name="StartGameButton"
+                        Content="게임 시작"
+                        Style="{StaticResource MenuButtonStyle}"
+                        Click="StartGameButton_Click"
+                        Visibility="{Binding IsChecked, ElementName=StandardModeRadio, 
+                                           Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
-            <!-- 종료 버튼 -->
-            <Button x:Name="ExitButton"
-                    Content="종료"
-                    Style="{StaticResource MenuButtonStyle}"
-                    materialDesign:ButtonAssist.CornerRadius="5"
-                    Background="{DynamicResource SecondaryHueMidBrush}"
-                    Click="ExitButton_Click"/>
+                <!-- 커스텀 모드 설정 버튼 -->
+                <Button x:Name="CustomSetupButton"
+                        Content="커스텀 보드 설정"
+                        Style="{StaticResource MenuButtonStyle}"
+                        Background="{DynamicResource SecondaryHueMidBrush}"
+                        Click="CustomSetupButton_Click"
+                        Visibility="{Binding IsChecked, ElementName=CustomModeRadio, 
+                                           Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+                <!-- 종료 버튼 -->
+                <Button x:Name="ExitButton"
+                        Content="종료"
+                        Style="{StaticResource MenuButtonStyle}"
+                        materialDesign:ButtonAssist.CornerRadius="5"
+                        Background="{DynamicResource SecondaryHueDarkBrush}"
+                        Click="ExitButton_Click"/>
+            </StackPanel>
+
+            <!-- 커스텀 모드 설명 -->
+            <Border x:Name="CustomModeInfo"
+                    Background="{DynamicResource MaterialDesignCardBackground}"
+                    CornerRadius="5"
+                    Padding="15"
+                    Margin="0,20,0,0"
+                    Width="400"
+                    Visibility="{Binding IsChecked, ElementName=CustomModeRadio, 
+                               Converter={StaticResource BooleanToVisibilityConverter}}">
+                <StackPanel>
+                    <TextBlock Text="🧩 커스텀 모드 특징" 
+                              FontWeight="Bold" 
+                              FontSize="16"
+                              Margin="0,0,0,10"/>
+                    <TextBlock TextWrapping="Wrap" Opacity="0.8">
+                        • Archbishop (비숍+나이트): 대각선과 L자 이동<LineBreak/>
+                        • Chancellor (룩+나이트): 직선과 L자 이동<LineBreak/>
+                        • Amazon (퀸+나이트): 모든 방향과 L자 이동<LineBreak/>
+                        • Ferz, Wazir, Camel 등 다양한 페어리 기물<LineBreak/>
+                        • 자유로운 보드 배치와 규칙 설정
+                    </TextBlock>
+                </StackPanel>
+            </Border>
         </StackPanel>
     </Grid>
 </UserControl>

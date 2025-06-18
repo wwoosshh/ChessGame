@@ -5,6 +5,7 @@ using ChessGame.Core.Models.Board;
 using ChessGame.Core.Models.Game;
 using ChessGame.Core.Models.Pieces.Standard;
 using ChessGame.Core.Events;
+using ChessGame.Core.Models.Pieces.Abstract;
 
 namespace ChessGame.Core.Services
 {
@@ -34,7 +35,13 @@ namespace ChessGame.Core.Services
             lock (_moveLock)
             {
                 _gameState = new GameState { GameMode = mode };
-                _gameState.Initialize();
+
+                if (mode == GameMode.Standard)
+                {
+                    _gameState.Initialize(); // 표준 보드 설정
+                }
+                // Custom 모드는 별도로 StartCustomGame에서 처리
+
                 _turnManager.Reset();
             }
         }
@@ -270,7 +277,26 @@ namespace ChessGame.Core.Services
                 GameEnded?.Invoke(this, new GameEventArgs { GameState = _gameState });
             }
         }
+        public void StartCustomGame(Piece?[,] customBoard, PieceColor firstPlayer = PieceColor.White,
+                          bool allowCastling = true, bool allowEnPassant = true)
+        {
+            lock (_moveLock)
+            {
+                _gameState = new GameState
+                {
+                    GameMode = GameMode.Custom,
+                    CurrentPlayer = firstPlayer
+                };
 
+                // 커스텀 보드 설정
+                _gameState.Board.SetupCustomPosition(customBoard, allowCastling, allowEnPassant);
+
+                _turnManager.Reset();
+
+                // 현재 플레이어를 설정된 첫 플레이어로 변경
+                _gameState.CurrentPlayer = firstPlayer;
+            }
+        }
         public List<Position> GetLegalMoves(Position from)
         {
             var piece = _gameState.Board.GetPiece(from);

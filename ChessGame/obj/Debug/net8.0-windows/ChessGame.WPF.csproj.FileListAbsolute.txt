@@ -3,12 +3,14 @@ C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Controls
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Controls\EvaluationBarControl.baml
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Controls\MoveEvaluationControl.baml
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Views\CustomBoardSetupView.baml
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Views\MenuView.baml
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\App.baml
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Controls\ChessBoardControl.g.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Controls\EvaluationBarControl.g.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Controls\MoveEvaluationControl.g.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Views\CustomBoardSetupView.g.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Views\GameView.g.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\Views\MenuView.g.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\App.g.cs
@@ -36,6 +38,7 @@ C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGam
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGame.WPF.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGame.WPF.AssemblyInfo.cs
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGame.WPF.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGame.WPF.sourcelink.json
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGam.499A01BB.Up2Date
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\ChessGame.WPF.dll
 C:\Users\user\source\repos\ChessGame\ChessGame\obj\Debug\net8.0-windows\refint\ChessGame.WPF.dll

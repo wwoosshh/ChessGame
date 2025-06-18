@@ -3,6 +3,7 @@ C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.
 C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.AssemblyInfo.cs
 C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ChessGame\ChessGame.AI\obj\Debug\net8.0\ChessGame.AI.sourcelink.json
 C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.AI.deps.json
 C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.AI.dll
 C:\Users\user\source\repos\ChessGame\ChessGame.AI\bin\Debug\net8.0\ChessGame.AI.pdb

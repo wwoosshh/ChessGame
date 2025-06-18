@@ -8,6 +8,7 @@ namespace ChessGame.WPF.Views
     public partial class MenuView : UserControl
     {
         public event EventHandler<StartGameEventArgs>? StartGameRequested;
+        public event EventHandler? StartCustomGameRequested; // 새로 추가
 
         public MenuView()
         {
@@ -31,6 +32,12 @@ namespace ChessGame.WPF.Views
             });
         }
 
+        // 새로 추가: 커스텀 모드 설정 버튼
+        private void CustomSetupButton_Click(object sender, RoutedEventArgs e)
+        {
+            StartCustomGameRequested?.Invoke(this, EventArgs.Empty);
+        }
+
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -40,6 +47,6 @@ namespace ChessGame.WPF.Views
     public class StartGameEventArgs : EventArgs
     {
         public GameMode GameMode { get; set; }
-        public AiDifficulty AiDifficulty { get; set; }  // Core.Enums에서 가져옴
+        public AiDifficulty AiDifficulty { get; set; }
     }
 }
